@@ -43,7 +43,7 @@ next.addEventListener('click', () => {
 
 
 prev.addEventListener('click', () => {
-    if(areaBoxes.scrollLeft > area.offsetWidth){
+    if(areaBoxes.scrollLeft >= area.offsetWidth){
         areaBoxes.scrollLeft -= area.offsetWidth;
     }else if(areaBoxes.scrollLeft == 0){
         areaBoxes.scrollLeft = areaMax;
