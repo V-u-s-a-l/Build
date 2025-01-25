@@ -41,12 +41,6 @@ next.addEventListener('click', () => {
     }    
 });
 
-console.log(area.offsetWidth);
-console.log(areaMax);
-
-
-
-
 
 prev.addEventListener('click', () => {
     if(areaBoxes.scrollLeft > area.offsetWidth){
@@ -54,9 +48,6 @@ prev.addEventListener('click', () => {
     }else if(areaBoxes.scrollLeft == 0){
         areaBoxes.scrollLeft = areaMax;
     }
-
-    console.log(areaBoxes.scrollLeft);
-    console.log(area.offsetWidth);
 });
 
 
